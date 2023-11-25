@@ -1,0 +1,5 @@
+# these are files that we don't want to upload to github because they can be auto-generated 
+
+/node_modules
+/dist
+.parcel-cache

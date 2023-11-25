@@ -1,0 +1,27 @@
+{
+  "name": "namastereactjourney",
+  "version": "1.0.0",
+  "description": "this is namaste react by prabhat",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prabhat1001/NamasteReactJourney.git"
+  },
+  "keywords": [],
+  "author": "Prabhat Saraswat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prabhat1001/NamasteReactJourney/issues"
+  },
+  "homepage": "https://github.com/prabhat1001/NamasteReactJourney#readme",
+  "devDependencies": {
+    "parcel": "^2.10.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

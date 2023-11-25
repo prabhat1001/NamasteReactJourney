@@ -7,6 +7,10 @@
 // Manipulate the HTML DOM using React
 
 // Create nested React Elements
+
+import React from "react"; //importing react from node_modules
+import ReactDOM from "react-dom/client";
+
 const heading = React.createElement(
     "h1",
     {
