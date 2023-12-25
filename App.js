@@ -18,6 +18,9 @@ const heading = (
   </h1>
 );
 
+
+//minor change
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(heading);
