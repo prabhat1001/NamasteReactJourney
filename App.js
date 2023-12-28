@@ -18,8 +18,15 @@ const heading = (
   </h1>
 );
 
+//React Components
 
-//minor change
+// Class Based Components
+// Functional Components
+
+const HeaderComponent = () => {
+  return <h1>Namaste React Functional Component! 🚀 </h1>;
+};
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
