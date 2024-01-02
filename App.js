@@ -11,7 +11,13 @@ const Title = () => (
 
 const HeadingComponent = () => (
   <div id="container">
+    
+    // all the below three are same
+
+    {Title()}
     <Title />
+    <Title></Title>
+
     <p>Here: {userInput}</p>
     <h1>Namaste React Functional Component</h1>
   </div>
