@@ -1,7 +1,24 @@
 import React from "react"; //importing react from node_modules
 import ReactDOM from "react-dom/client";
 
-const userInput = <script>alert("XSS attack!")</script>;
+/**
+ * Header
+ * - Logo
+ * - Nav items
+ * 
+ * Body
+ *  - Search
+ *  - Restaurant Container
+ *    - Restaurant card
+ * 
+ * Footer
+ * - Copyright
+ * - Links
+ * - Address
+ * - Contact
+ */ 
+
+
 
 const Title = () => (
   <h1 className="head" tabIndex="5">
@@ -11,15 +28,8 @@ const Title = () => (
 
 const HeadingComponent = () => (
   <div id="container">
-    
-    // all the below three are same
-
-    {Title()}
     <Title />
-    <Title></Title>
-
-    <p>Here: {userInput}</p>
-    <h1>Namaste React Functional Component</h1>
+    <h1 className="heading">Namaste React Functional Component</h1>
   </div>
 );
  
