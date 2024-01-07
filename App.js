@@ -19,10 +19,6 @@ import Logo from "./assets/logo.png"
  * - Contact
  */ 
 
-// const border ={
-//   height: '5vh',
-//   border: '2px solid black'
-// }
 
 const HeaderComp = () =>{
 return(
