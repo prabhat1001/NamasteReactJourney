@@ -39,24 +39,26 @@ return(
 )
 }
 
+// This is called "Destructuring on the fly"
+//  const {img, name, rating, address} = props
 
-const RestCards =(props)=>{
+
+const RestCards =({img, name, rating, address})=>{
   return(
     <div className="card">
             <div className="img-div">
-              {console.log(props)}
               <img 
-                src={props.img} 
+                src={img} 
                 alt="dish-img">
               </img>
             </div>
             <div className="detail-cont">
-              <h4>{props.name}</h4>
+              <h4>{name}</h4>
               <div className="rating-cont">
                 <img className="star" src="https://img.icons8.com/flat-round/64/000000/star--v1.png"></img>
-                <p>{props.rating}</p>
+                <p>{rating}</p>
               </div>
-              <p className="address">{props.address}</p>
+              <p className="address">{address}</p>
             </div>
     </div>
   )
