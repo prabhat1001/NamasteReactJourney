@@ -39,76 +39,64 @@ return(
 )
 }
 
+
+const RestCards =(props)=>{
+  return(
+    <div className="card">
+            <div className="img-div">
+              {console.log(props)}
+              <img 
+                src={props.img} 
+                alt="dish-img">
+              </img>
+            </div>
+            <div className="detail-cont">
+              <h4>{props.name}</h4>
+              <div className="rating-cont">
+                <img className="star" src="https://img.icons8.com/flat-round/64/000000/star--v1.png"></img>
+                <p>{props.rating}</p>
+              </div>
+              <p className="address">{props.address}</p>
+            </div>
+    </div>
+  )
+}
+
+
 const BodyComp = () =>{
  return(
   <div className="body-comp">
       <div className="rest-cont">
         <h2 className="rest-heading">Top restaurant chains in Mathura</h2>
         <div className="cards-cont">
-          <div className="card">
-            <div className="img-div">
-              <img 
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/cfe5a6b2c186e42811f595e7ebfd7331" 
-                alt="dish-img">
-              </img>
-            </div>
-            <div className="detail-cont">
-              <h4>Pizza Hut</h4>
-              <div className="rating-cont">
-                <img className="star" src="https://img.icons8.com/flat-round/64/000000/star--v1.png"></img>
-                <p>4 . 27 mins</p>
-              </div>
-              <p className="address">Shankar Vihar</p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="img-div">
-              <img 
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/klugweky5elnxe9ce1ot" 
-                alt="dish-img">
-              </img>
-            </div>
-            <div className="detail-cont">
-              <h4>Dominos Pizza</h4>
-              <div className="rating-cont">
-                <img className="star" src="https://img.icons8.com/flat-round/64/000000/star--v1.png"></img>
-                <p>4.5 . 17 mins</p>
-              </div>
-              <p className="address">Higway Plaza</p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="img-div">
-              <img 
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/muh4uchyufzjjcnuaifj" 
-                alt="dish-img">
-              </img>
-            </div>
-            <div className="detail-cont">
-              <h4>Dilli wale chur chur naan</h4>
-              <div className="rating-cont">
-                <img className="star" src="https://img.icons8.com/flat-round/64/000000/star--v1.png"></img>
-                <p>3.5 . 40 mins</p>
-              </div>
-              <p className="address">Dampier Nagar</p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="img-div">
-              <img 
-                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/vriqqftj28fxtodlz0ia" 
-                alt="dish-img">
-              </img>
-            </div>
-            <div className="detail-cont">
-              <h4>Bansal Foods</h4>
-              <div className="rating-cont">
-                <img className="star" src="https://img.icons8.com/flat-round/64/000000/star--v1.png"></img>
-                <p>2.7 . 45 mins</p>
-              </div>
-              <p className="address">Shankar Vihar</p>
-            </div>
-          </div>
+
+        <RestCards 
+          img="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/cfe5a6b2c186e42811f595e7ebfd7331"
+          name="Pizza Hut"
+          rating="4 . 27 mins"
+          address="Shankar Vihar"
+        />
+
+        <RestCards 
+          img="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/klugweky5elnxe9ce1ot"
+          name="Dominos Pizza"
+          rating="4.5 . 17 mins"
+          address="Highway Plaza"
+        />
+
+        <RestCards 
+          img="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/muh4uchyufzjjcnuaifj"
+          name="Dilli wale chur chur naan"
+          rating="3.5 . 40 mins"
+          address="Dampier Nagar"
+        />
+
+        <RestCards 
+          img="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/vriqqftj28fxtodlz0ia"
+          name="Bansal Foods"
+          rating="2.7 . 45 mins"
+          address="Shankar Vihar"
+        />
         </div>
       </div>
   </div>
