@@ -2,23 +2,6 @@ import React from "react"; //importing react from node_modules
 import ReactDOM from "react-dom/client";
 import Logo from "./assets/logo.png"
 
-/**
- * Header
- * - Logo
- * - Nav items
- * 
- * Body
- *  - Search
- *  - Restaurant Container
- *    - Restaurant card
- * 
- * Footer
- * - Copyright
- * - Links
- * - Address
- * - Contact
- */ 
-
 
 const HeaderComp = () =>{
 return(
