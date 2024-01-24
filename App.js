@@ -22,9 +22,6 @@ return(
 )
 }
 
-// This is called "Destructuring on the fly"
-//  const {img, name, rating, address} = props
-
 const RestCards =({img, name, rating, address})=>{
   return(
     <div className="card">
