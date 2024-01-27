@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import Logo from "./assets/logo.png";
 
 
-//Dummy data from previous swiggy API
+//Dummy data from swiggy API ( for practice )
 
 const resObj = [
   {
