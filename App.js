@@ -1,4 +1,4 @@
-import React from "react"; //importing react from node_modules
+import React from "react"; 
 import ReactDOM from "react-dom/client";
 import Logo from "./assets/logo.png";
 
