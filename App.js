@@ -1526,7 +1526,7 @@ const resObj = [
     type: "restaurant",
     data: {
       type: "F",
-      id: "224022",
+      id: "224023",
       name: "Oven Story Pizza",
       uuid: "2fcd35d0-e1a7-4555-9477-91bc3e2d0a37",
       city: "7",
@@ -1611,7 +1611,7 @@ const resObj = [
         headerTypeV2: 0,
       },
       sla: {
-        restaurantId: "224022",
+        restaurantId: "224023",
         deliveryTime: 32,
         minDeliveryTime: 32,
         maxDeliveryTime: 32,
@@ -1682,6 +1682,11 @@ const RestCards = (props) => {
   );
 };
 
+// not using keys (not acceptable) <<< using index as keys <<< using Unique Id's as keys (most preferable way).
+
+//           (worst practice) --------------------------------> (best practice)
+
+
 const BodyComp = () => {
   return (
     <div className="body-comp">
@@ -1690,7 +1695,7 @@ const BodyComp = () => {
         <div className="cards-cont">
           {
             resObj.map((res) => (
-            <RestCards resData = {res} />
+            <RestCards key={res.data.id} resData = {res} /> //key is here for uniquely distinguish the cards 
             ))
           }
         </div>
