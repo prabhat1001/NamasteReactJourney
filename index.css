@@ -5,7 +5,7 @@
 *{margin:0; padding:0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
 
 .food-comp{
-    height: 100vh;
+    /* height: 100vh; */
     width: full;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@
 /* ------------ */
 
 .body-comp{
-    height: 70vh;
+    /* height: 70vh; */
     width: 80vw;
     /* border: 1px solid black; */
     display: flex;
@@ -71,7 +71,7 @@
 .rest-cont{
     /* border: 3px solid green; */
     width: 100%;
-    height: 100%;
+    height: 120%;
     padding: 1.5rem;
 }
 
@@ -84,16 +84,20 @@
     width: 100%;
     height: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .card{
     /* border: 3px solid grey; */
-    width: 23%;
-    height: 80%;
+    width: 25%;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    flex-basis: calc(24% - 10px); /* Set the width of each card (25% of the container width minus margins) */
+    margin: 5px; /* Add margins to create space between cards */
 }
 
 .img-div{
