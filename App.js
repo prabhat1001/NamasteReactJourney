@@ -1522,6 +1522,114 @@ const resObj = [
     },
     subtype: "basic",
   },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "224022",
+      name: "Oven Story Pizza",
+      uuid: "2fcd35d0-e1a7-4555-9477-91bc3e2d0a37",
+      city: "7",
+      area: "Newtown",
+      totalRatingsString: "5000+ ratings",
+      cloudinaryImageId: "ab979bffbd658e74de650a15ca0092a3",
+      cuisines: ["Pizzas", "Pastas", "Italian", "Desserts", "Beverages"],
+      tags: [],
+      costForTwo: 40000,
+      costForTwoString: "â¹400 FOR TWO",
+      deliveryTime: 32,
+      minDeliveryTime: 32,
+      maxDeliveryTime: 32,
+      slaString: "32 MINS",
+      lastMileTravel: 3,
+      slugs: {
+        restaurant: "ovenstory-pizza-new-town-salt-lake",
+        city: "kolkata",
+      },
+      cityState: "7",
+      address:
+        "UNIT NO 220, 2ND FLOOR, ACTION AREA 1B, NEW TOWN, KOLKATA 700156",
+      locality: "ACTION AREA 1B",
+      parentId: 3534,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      ribbon: [
+        {
+          type: "PROMOTED",
+        },
+      ],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 4400,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 4400,
+        message: "",
+        title: "Delivery Charge",
+        amount: "4400",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID:
+        "cid=7278007~p=1~eid=00000189-0d8c-2028-2291-9b6900cf0164~srvts=1688149434408",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "3 kms",
+      hasSurge: false,
+      aggregatedDiscountInfoV3: {
+        header: "â¹125 OFF",
+        subHeader: "ABOVE â¹699",
+        discountTag: "FLAT DEAL",
+        headerTypeV2: 0,
+      },
+      sla: {
+        restaurantId: "224022",
+        deliveryTime: 32,
+        minDeliveryTime: 32,
+        maxDeliveryTime: 32,
+        lastMileTravel: 3,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: true,
+      avgRating: "4.1",
+      totalRatings: 5000,
+      new: false,
+    },
+    subtype: "basic",
+  },
 ]
 
 const HeaderComp = () => {
@@ -1580,32 +1688,11 @@ const BodyComp = () => {
       <div className="rest-cont">
         <h2 className="rest-heading">Top restaurant chains in Mathura</h2>
         <div className="cards-cont">
-          <RestCards resData = {resObj[0]}/>
-          <RestCards resData = {resObj[3]}/>
-          <RestCards resData = {resObj[8]}/>
-          <RestCards resData = {resObj[6]}/>
-          
-
-          {/* <RestCards
-            img="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/klugweky5elnxe9ce1ot"
-            name="Dominos Pizza"
-            rating="4.5 . 17 mins"
-            address="Highway Plaza"
-          />
-
-          <RestCards
-            img="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/muh4uchyufzjjcnuaifj"
-            name="Dilli wale chur chur naan"
-            rating="3.5 . 40 mins"
-            address="Dampier Nagar"
-          />
-
-          <RestCards
-            img="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/vriqqftj28fxtodlz0ia"
-            name="Bansal Foods"
-            rating="2.7 . 45 mins"
-            address="Shankar Vihar"
-          /> */}
+          {
+            resObj.map((res) => (
+            <RestCards resData = {res} />
+            ))
+          }
         </div>
       </div>
     </div>
