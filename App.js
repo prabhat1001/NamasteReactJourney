@@ -1522,7 +1522,7 @@ const resObj = [
     },
     subtype: "basic",
   },
-];
+]
 
 const HeaderComp = () => {
   return (
@@ -1543,22 +1543,28 @@ const HeaderComp = () => {
   );
 };
 
-const RestCards = ({ img, name, rating, address }) => {
+const RestCards = (props) => {
+  const {resData} = props;
+  const maxLength = 60; // Maximum length for the text
+  const truncateText = (text) => {
+    return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
+  };
+  // console.log(resData.data.name);
   return (
     <div className="card">
       <div className="img-div">
-        <img src={img} alt="dish-img"></img>
+        <img src= {`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/`+ resData.data.cloudinaryImageId} alt="dish-img"></img>
       </div>
       <div className="detail-cont">
-        <h4>{name}</h4>
+        <h4>{resData.data.name}</h4>
         <div className="rating-cont">
           <img
             className="star"
             src="https://img.icons8.com/flat-round/64/000000/star--v1.png"
           ></img>
-          <p>{rating}</p>
+          <p>{resData.data.avgRating}</p>
         </div>
-        <p className="address">{address}</p>
+        <p className="address">{truncateText(resData.data.address)}</p>
       </div>
     </div>
   );
@@ -1570,14 +1576,13 @@ const BodyComp = () => {
       <div className="rest-cont">
         <h2 className="rest-heading">Top restaurant chains in Mathura</h2>
         <div className="cards-cont">
-          <RestCards
-            img="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/cfe5a6b2c186e42811f595e7ebfd7331"
-            name="Pizza Hut"
-            rating="4 . 27 mins"
-            address="Shankar Vihar"
-          />
+          <RestCards resData = {resObj[0]}/>
+          <RestCards resData = {resObj[3]}/>
+          <RestCards resData = {resObj[8]}/>
+          <RestCards resData = {resObj[6]}/>
+          
 
-          <RestCards
+          {/* <RestCards
             img="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/klugweky5elnxe9ce1ot"
             name="Dominos Pizza"
             rating="4.5 . 17 mins"
@@ -1596,7 +1601,7 @@ const BodyComp = () => {
             name="Bansal Foods"
             rating="2.7 . 45 mins"
             address="Shankar Vihar"
-          />
+          /> */}
         </div>
       </div>
     </div>
