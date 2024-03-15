@@ -1,6 +1,6 @@
 import React from "react"; 
 import ReactDOM from "react-dom/client";
-import Logo from "../assets/logo.png";
+import Header from "./components/Header"
 
 
 //Dummy data from swiggy API ( for practice )
@@ -1632,24 +1632,6 @@ const resObj = [
   },
 ]
 
-const HeaderComp = () => {
-  return (
-    <div className="header-comp">
-      <div className="header-div">
-        <div className="logo">
-          <img className="logo-img" src={Logo} alt="logo" />
-        </div>
-        <ul className="nav-cont">
-          <li>Home</li>
-          <li>About</li>
-          <li>Offers</li>
-          <li>Help</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
 
 const RestCards = (props) => {
   const {resData} = props;
@@ -1711,7 +1693,7 @@ const FooterComp = () => {
 const FoodApp = () => {
   return (
     <div className="food-comp">
-      <HeaderComp />
+      <Header/>
       <BodyComp />
       <FooterComp />
     </div>
