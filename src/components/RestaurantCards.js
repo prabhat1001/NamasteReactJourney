@@ -1,4 +1,5 @@
 import React from 'react'
+import { CDN_URL, STAR_URL } from '../utils/constants';
 
 const RestaurantCards = (props) => {
     const {resData} = props;
@@ -14,14 +15,14 @@ const RestaurantCards = (props) => {
     return (
       <div className="card">
         <div className="img-div">
-          <img src= {`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/`+ cloudinaryImageId} alt="dish-img"></img>
+          <img src= {CDN_URL+ cloudinaryImageId} alt="dish-img"></img>
         </div>
         <div className="detail-cont">
           <h4>{name}</h4>
           <div className="rating-cont">
             <img
               className="star"
-              src="https://img.icons8.com/flat-round/64/000000/star--v1.png"
+              src= {STAR_URL}
             ></img>
             <p>{avgRating} • {deliveryTime} min</p>
           </div>
