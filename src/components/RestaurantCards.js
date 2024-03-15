@@ -31,4 +31,7 @@ const RestaurantCards = (props) => {
     );
 }
 
+// not using keys (not acceptable) <<< using index as keys <<< using Unique Id's as keys (most preferable way).
+// (worst practice) --------------------------------> (best practice)
+
 export default RestaurantCards
