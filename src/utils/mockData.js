@@ -214,7 +214,7 @@ const resObj = [
       data: {
         type: "F",
         id: "147193",
-        name: "CFC (Calcutta Fried Chicken)",
+        name: "Calcutta Fried Chicken",
         uuid: "915320aa-671f-452b-8e3e-7b1b1be1d075",
         city: "7",
         area: "Newtown",
