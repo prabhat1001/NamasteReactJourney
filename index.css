@@ -166,7 +166,52 @@
 
 /* Tablet */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    .header-comp{
+        height: 4rem;
+    }
 
+    .logo{
+        width: 8vw;
+        height: 8vw;
+        /* border: 2px solid black; */
+    }
+    .nav-cont>li{
+        font-size: 2vw;
+        width: 10vw;
+        font-weight: 500;
+    }
+
+    .rest-heading{
+        font-size: 2.8vw;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .card {
+        height: 35vw;
+        flex-basis: calc(48% - 10px);
+    }
+
+    .img-div{
+        height: 20vw;
+    }
+
+    .detail-cont{
+        /* border: 2px solid black; */
+        height: 13vw;
+    }
+    .detail-cont>h4{
+        font-size: 2vw;
+    }
+    .star{
+        height: 0.9rem;
+        width: 0.9rem;
+    }
+    .rating-cont>p{
+        font-size: 1.5vw;
+    }
+    .address{
+        font-size: 1.5vw;
+    }
 }
 
 /* Laptop */
